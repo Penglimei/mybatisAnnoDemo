@@ -22,9 +22,9 @@
         </environment>
     </environments>
 
-    <!-- 指定映射配置文件的位置，银蛇配置文件指的是每个dao独立的配置文件 -->
+    <!-- 用注解来配置 Dao接口，应使用 class属性指定被注解的 dao全限定名 -->
     <mappers>
-        <mapper resource="com/plm/dao/IUserDao.xml"></mapper>
+        <mapper class="com.plm.dao.IUserDao"></mapper>
     </mappers>
 
 </configuration>
