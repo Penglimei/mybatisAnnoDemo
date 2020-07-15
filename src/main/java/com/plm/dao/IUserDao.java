@@ -20,6 +20,9 @@ import java.util.List;
  *      @Delete
  *
  */
+
+//开启二级缓存，默认是一级缓存
+@CacheNamespace(blocking = true)
 public interface IUserDao {
 
     /**
